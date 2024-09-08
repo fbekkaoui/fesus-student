@@ -1,60 +1,45 @@
+
 # FESuS
 
-This project can be used as a starting point to create your own Vaadin application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+Dieses Projekt kann als Ausgangspunkt verwendet werden, um eine eigene Vaadin-Anwendung mit Spring Boot zu erstellen. Es enthält alle notwendigen Konfigurationen und einige Platzhalter-Dateien, um den Einstieg zu erleichtern.
 
-## Running the application
+## Anwendung ausführen
 
-The project is a standard Maven project. To run it from the command line,
-type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
-http://localhost:8080 in your browser.
+Das Projekt ist ein standardmäßiges Maven-Projekt. Um es über die Kommandozeile zu starten, geben Sie `mvnw` (Windows) oder `./mvnw` (Mac & Linux) ein und öffnen Sie dann http://localhost:8080 in Ihrem Browser.
 
-You can also import the project to your IDE of choice as you would with any
-Maven project. Read more on [how to import Vaadin projects to different IDEs](https://vaadin.com/docs/latest/guide/step-by-step/importing) (Eclipse, IntelliJ IDEA, NetBeans, and VS Code).
+Sie können das Projekt auch in Ihre bevorzugte IDE importieren, wie Sie es mit jedem Maven-Projekt tun würden. Weitere Informationen finden Sie in der [Anleitung zum Importieren von Vaadin-Projekten in verschiedene IDEs](https://vaadin.com/docs/latest/guide/step-by-step/importing) (Eclipse, IntelliJ IDEA, NetBeans und VS Code).
 
-## Deploying to Production
+## Deployment in die Produktion
 
-To create a production build, call `mvnw clean package -Pproduction` (Windows),
-or `./mvnw clean package -Pproduction` (Mac & Linux).
-This will build a JAR file with all the dependencies and front-end resources,
-ready to be deployed. The file can be found in the `target` folder after the build completes.
+Um einen Produktions-Build zu erstellen, führen Sie `mvnw clean package -Pproduction` (Windows) oder `./mvnw clean package -Pproduction` (Mac & Linux) aus. Dies erstellt eine JAR-Datei mit allen Abhängigkeiten und Frontend-Ressourcen, die bereit für den Einsatz ist. Die Datei befindet sich nach Abschluss des Builds im `target`-Ordner.
 
-Once the JAR file is built, you can run it using
-`java -jar target/fesus-1.0-SNAPSHOT.jar`
+Sobald die JAR-Datei erstellt ist, können Sie sie mit dem Befehl `java -jar target/fesus-1.0-SNAPSHOT.jar` ausführen.
 
-## Project structure
+## Projektstruktur
 
-- `MainLayout.java` in `src/main/java` contains the navigation setup (i.e., the
-  side/top bar and the main menu). This setup uses
-  [App Layout](https://vaadin.com/docs/components/app-layout).
-- `views` package in `src/main/java` contains the server-side Java views of your application.
-- `views` folder in `frontend/` contains the client-side JavaScript views of your application.
-- `themes` folder in `frontend/` contains the custom CSS styles.
+- `MainLayout.java` im Ordner `src/main/java` enthält das Navigations-Setup (d.h. die Seiten-/Top-Leiste und das Hauptmenü). Dieses Setup verwendet das [App Layout](https://vaadin.com/docs/components/app-layout).
+- Das Paket `views` im Ordner `src/main/java` enthält die serverseitigen Java-Ansichten Ihrer Anwendung.
+- Der Ordner `views` im Verzeichnis `frontend/` enthält die clientseitigen JavaScript-Ansichten Ihrer Anwendung.
+- Der Ordner `themes` im Verzeichnis `frontend/` enthält die benutzerdefinierten CSS-Stile.
 
-## Useful links
+## Nützliche Links
 
-- Read the documentation at [vaadin.com/docs](https://vaadin.com/docs).
-- Follow the tutorial at [vaadin.com/docs/latest/tutorial/overview](https://vaadin.com/docs/latest/tutorial/overview).
-- Create new projects at [start.vaadin.com](https://start.vaadin.com/).
-- Search UI components and their usage examples at [vaadin.com/docs/latest/components](https://vaadin.com/docs/latest/components).
-- View use case applications that demonstrate Vaadin capabilities at [vaadin.com/examples-and-demos](https://vaadin.com/examples-and-demos).
-- Build any UI without custom CSS by discovering Vaadin's set of [CSS utility classes](https://vaadin.com/docs/styling/lumo/utility-classes). 
-- Find a collection of solutions to common use cases at [cookbook.vaadin.com](https://cookbook.vaadin.com/).
-- Find add-ons at [vaadin.com/directory](https://vaadin.com/directory).
-- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vaadin) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
-- Report issues, create pull requests in [GitHub](https://github.com/vaadin).
+- Lesen Sie die Dokumentation unter [vaadin.com/docs](https://vaadin.com/docs).
+- Folgen Sie dem Tutorial unter [vaadin.com/docs/latest/tutorial/overview](https://vaadin.com/docs/latest/tutorial/overview).
+- Erstellen Sie neue Projekte unter [start.vaadin.com](https://start.vaadin.com/).
+- Suchen Sie nach UI-Komponenten und Anwendungsbeispielen unter [vaadin.com/docs/latest/components](https://vaadin.com/docs/latest/components).
+- Sehen Sie sich Anwendungsbeispiele an unter [vaadin.com](https://vaadin.com/).
 
+## Deployment mit Docker
 
-## Deploying using Docker
-
-To build the Dockerized version of the project, run
+Um das Projekt mit Docker bereitzustellen, können Sie die im Projekt enthaltene `Dockerfile` verwenden, um ein Docker-Image zu erstellen und die Anwendung in einem Docker-Container auszuführen. Führen Sie die folgenden Schritte aus:
 
 ```
 mvn clean package -Pproduction
 docker build . -t fesus:latest
 ```
 
-Once the Docker image is correctly built, you can test it locally using
+Führen Sie den Docker-Container aus:
 
 ```
 docker run -p 8080:8080 fesus:latest
