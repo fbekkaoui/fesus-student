@@ -11,7 +11,7 @@
 
     <properties>
         <java.version>19</java.version>
-        <vaadin.version>24.1.8</vaadin.version>
+        <vaadin.version>24.4.11</vaadin.version>
     </properties>
 
     <parent>
@@ -66,6 +66,7 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
+            <version>2.3.232</version>
             <scope>runtime</scope>
         </dependency>
 
