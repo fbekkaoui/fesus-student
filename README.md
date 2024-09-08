@@ -1,7 +1,13 @@
 
 # FESuS
 
-Dieses Projekt kann als Ausgangspunkt verwendet werden, um eine eigene Vaadin-Anwendung mit Spring Boot zu erstellen. Es enthält alle notwendigen Konfigurationen und einige Platzhalter-Dateien, um den Einstieg zu erleichtern.
+Dieses Projekt kann als Ausgangspunkt verwendet werden, um eine eigene Vaadin-Anwendung mit Spring Boot zu erstellen. Es enthält alle notwendigen Konfigurationen und einige Platzhalter-Dateien, um den Einstieg zu erleichtern. Analysiert welche Datenbank für die Anwendung geeignet ist, erstellt diese und implementiert die entsprechenden Repositories und Services. Die hier genutzte Datenbank ist eine H2-Datenbank und dient nur zu Testzwecken bzw. zur ersten Ausführung der Anwendung. 
+
+Erstellen Sie immer Kommentare in den Klassen, um den Code verständlich zu machen. Dies stellt ein Bewertungskriterium dar. 
+In den Kommentaren ist festzuhalten wer ersteller und wer wann etwas modifiziert hat.
+Stellen Sie Fragen für unklare Sachverhalte.
+
+Ich wünsche Ihnen viel Erfolg bei der Umsetzung des Projektes.
 
 ## Anwendung ausführen
 
@@ -24,7 +30,7 @@ Sobald die JAR-Datei erstellt ist, können Sie sie mit dem Befehl `java -jar tar
 
 ## Nützliche Links
 
-- Lesen Sie die Dokumentation unter [vaadin.com/docs](https://vaadin.com/docs/v23). Für eine Umfangreiche Dokumentation der Komponenten etc. gehen Sie zur Version 23 (siehe Link).
+- Lesen Sie die Dokumentation unter [vaadin.com/docs/v23](https://vaadin.com/docs/v23). Für eine Umfangreiche Dokumentation der Komponenten etc. gehen Sie zur Version 23 (siehe Link).
 - Folgen Sie dem Tutorial unter [vaadin.com/docs/latest/tutorial/overview](https://vaadin.com/docs/latest/tutorial/overview).
 - Erstellen Sie neue Projekte unter [start.vaadin.com](https://start.vaadin.com/).
 - Suchen Sie nach UI-Komponenten und Anwendungsbeispielen unter [vaadin.com/docs/latest/components](https://vaadin.com/docs/latest/components).
