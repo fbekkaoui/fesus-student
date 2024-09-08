@@ -24,8 +24,7 @@ Sobald die JAR-Datei erstellt ist, können Sie sie mit dem Befehl `java -jar tar
 
 ## Nützliche Links
 
-- Lesen Sie die Dokumentation unter [vaadin.com/docs](https://vaadin.com/docs/v23/).
-  Hinweis: Für eine Umfangreiche Dokumentation der Komponenten etc. gehen Sie zur Version 23 (Link oben). 
+- Lesen Sie die Dokumentation unter [vaadin.com/docs](https://vaadin.com/docs/v23). Für eine Umfangreiche Dokumentation der Komponenten etc. gehen Sie zur Version 23 (siehe Link).
 - Folgen Sie dem Tutorial unter [vaadin.com/docs/latest/tutorial/overview](https://vaadin.com/docs/latest/tutorial/overview).
 - Erstellen Sie neue Projekte unter [start.vaadin.com](https://start.vaadin.com/).
 - Suchen Sie nach UI-Komponenten und Anwendungsbeispielen unter [vaadin.com/docs/latest/components](https://vaadin.com/docs/latest/components).
